@@ -1,0 +1,26 @@
+[tool.taskipy.tasks]
+build = "mkdocs build"
+serve = "mkdocs serve"
+
+[tool.poetry]
+name = "mkdocs-template"
+version = "0.1.0"
+description = "a material mkdocs template to kickstart documentation and learning notes"
+authors = ["jlugao <joaolhullier@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mkdocs_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.1.9"
+mkdocs-pymdownx-material-extras = "^2.4.3"
+
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.10.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
